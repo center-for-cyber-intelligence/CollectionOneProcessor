@@ -1,4 +1,6 @@
 import os
+import mysql.connector
+from mysql.connector import Error
 from dataProcessor import dataProcessor
 
 def main():
@@ -45,5 +47,27 @@ def getFiles(currentWD):
                 filesToRead.append(filePath)
     return filesToRead
 
+def dbConnection():
+    # Connect to a MySQL instance
+    try:
+        print "[*] Establishing Connection to your MySQL Server...\n"
+
+        connection = mysql.connector.connect(host='localhost',
+                                             database='CollectionOne',
+                                             user='root',
+                                             password='4ZaCtr1wfY0M4zo')
+
+        if connection.is_connected():
+            dbInfo = connection.get_server_info()
+            print "[*] You are connected to your MySQL Server. This server is running MySQL version: ", dbInfo
+            cursor = connection.cursor()
+            cursor.execute("select database();")
+            record = cursor.fetchone()
+            print "[*] You are connected to database: ", record
+
+    except Error as e:
+        print "[!] Error while connecting to MySQL - ", e
+
+    return connection
 
 main()
