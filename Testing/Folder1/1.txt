@@ -1,0 +1,13 @@
+[PROCESSED AS U/N] - 1_someone@something.com:thisshouldmatchasapassword
+
+1238767612354786532148762153874|2_someone@something.com
+
+TestSection1|TestSection2|TestSection3
+
+|thisissomething|thisisalsosomething|3_someone@something.com|
+
+someone@something.com;255.255.255.255|THIS$h0uldM@tchAs@$tr0ngP@$$W0rd
+
+someone@something.com|thisshouldmatchasapassword
+
+4_someone@something.com;10.10.10.10|randomrandomrandomrandomrandomrandom
