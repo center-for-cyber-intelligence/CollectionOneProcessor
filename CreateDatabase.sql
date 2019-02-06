@@ -12,7 +12,7 @@ CREATE TABLE `emails_and_passwords` (
   KEY `domain` (`domain`),
   KEY `username` (`username`),
   KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=71651749 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE `usernames_and_passwords` (
   `recordID` int(11) NOT NULL AUTO_INCREMENT,
@@ -21,4 +21,4 @@ CREATE TABLE `usernames_and_passwords` (
   `folderName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `fileName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`recordID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1409380 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
